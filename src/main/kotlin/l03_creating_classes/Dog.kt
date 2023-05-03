@@ -1,6 +1,7 @@
-package creating_classes
+package l03_creating_classes
 
 fun dogSound() = "Gav-Gav"
+
 class Dog {
     fun bark() = "yip!"
     fun sound() = bark()

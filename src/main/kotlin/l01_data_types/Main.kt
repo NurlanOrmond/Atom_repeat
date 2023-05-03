@@ -1,3 +1,5 @@
+package l01_data_types
+
 fun main(args: Array<String>) {
     val int: Int = 10
     val double: Double = 10.10
