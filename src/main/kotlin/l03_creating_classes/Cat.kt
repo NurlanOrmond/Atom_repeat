@@ -1,4 +1,4 @@
-package creating_classes
+package l03_creating_classes
 
 class Cat {
     fun meow() = "mrrrow!"
