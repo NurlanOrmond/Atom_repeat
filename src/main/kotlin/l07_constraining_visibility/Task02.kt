@@ -1,4 +1,4 @@
-package constraining_visibility
+package l07_constraining_visibility
 
 /*
     Continue developing the Robot class from the exercises in the previous atoms.
