@@ -20,47 +20,26 @@ class Robot(
         }
     }
 
-
+    private fun checkStep(steps: Int): Boolean {
+        if (steps <= 0) {
+            println("steps argument must be positive, is $steps")
+            return true
+        }
+        return false
+    }
 
     fun right(steps: Int) {
-        if (steps > 0) {
+            if (checkStep(steps)) return
             x += steps
             x = crossBoundary(x)
-        } else {
-            println("steps argument must be positive, is $steps")
-        }
-
     }
 
     fun left(steps: Int) {
-        if (steps > 0) {
-            x -= steps
+        if (checkStep(steps)) return
+            x += steps
             x = crossBoundary(x)
-        } else {
-            println("steps argument must be positive, is $steps")
-        }
-
     }
 
-    fun down(steps: Int) {
-        if (steps > 0) {
-            y += steps
-            y = crossBoundary(y)
-        } else {
-            println("steps argument must be positive, is $steps")
-        }
-
-    }
-
-    fun up(steps: Int) {
-        if (steps > 0) {
-            y -= steps
-            y = crossBoundary(y)
-        } else {
-            println("steps argument must be positive, is $steps")
-        }
-
-    }
 
     fun getLocation(): String = "($x, $y)"
 
@@ -69,7 +48,7 @@ class Robot(
 
 fun main() {
     val robot = Robot(10, 1, 1)
-    robot.right(-1)
+    robot.right(-3)
 }
 /* Output:
 steps argument must be positive, is -1
