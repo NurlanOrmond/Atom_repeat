@@ -3,7 +3,7 @@ package exeptions
 
 fun validate (tel: Long) {
     if (tel < 79_000_000_000) {
-        throw Validatation()
+        throw Validatation("This is not phone number")
     }
 }
 fun main() {
@@ -13,7 +13,9 @@ fun main() {
     try{
         validate(78524567852)
     } catch (e: Validatation) {
-        println("Wrong entry")
+        println(e.message)
     }
+
+
 
 }

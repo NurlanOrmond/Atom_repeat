@@ -1,4 +1,4 @@
 package exeptions
 //
-class Validatation: Exception() {
+class Validatation(msg: String): Exception(msg) {
 }
