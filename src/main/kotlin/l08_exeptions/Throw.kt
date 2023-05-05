@@ -1,4 +1,4 @@
-package exeptions
+package l08_exeptions
 // throw - используется для явного создания нами кл исключения.
 
 // Зачем создавать throw?

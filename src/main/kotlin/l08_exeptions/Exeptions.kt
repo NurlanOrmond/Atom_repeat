@@ -1,4 +1,4 @@
-package exeptions
+package l08_exeptions
 // Throwable:
 // Exeptions
 // Errors

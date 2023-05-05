@@ -1,4 +1,4 @@
-package exeptions
+package l08_exeptions
 // здесь мы вручную кинули наш кастомный exception и так мы будем знать какая ошибка произошла
 
 fun validate (tel: Long) {
